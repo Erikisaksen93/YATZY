@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#app {
+    display:flex;
+    width:100%;
+}
+
+.left {
+    padding:10px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+    width:100%;
+}
+
+.right {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+    width:100%;
+}
+
+
+
+table, tr, td {
+    border: 1px solid gray;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 2em;
+}
+
+td {
+    font-weight: 600;
+    padding: 5px; 
+    width: 230px;
+    height: 10px;
+
+}
+
+.sum {
+    font-size: 1em;
+    border: 2px solid black;
+}
+
+.border {
+    border-right: 2px solid black;
+}
+
+#dice button {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-size: 2em;
+}
+
+#output {
+    border: 2px solid black;
+    width: 400px;
+    height: 200px;
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin:10px;
+}
+
+.top {
+    height:50%;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+#output button {
+    margin: 10px;
+    font-size: 3rem;
+    width: 55px;
+    height: 55px;
+}
+#output p{
+    font-size: 5rem;
+}
+#output p{
+
+    font-size: 2rem;
+}
+#saved {
+    border: 2px solid black;
+    width: 400px;
+    margin: 10px;
+    height: 200px;
+}
+
+.bot {
+
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    height:50%;
+}
+.p2{
+
+    font-size: 2rem;
+}
+.savedBut {
+
+    margin: 10px;
+    font-size: 3rem;
+    width: 55px;
+    height: 55px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    #app {
+        flex-direction:column-reverse;
+    }
+    .right {
+        align-self:flex-start;
+    }
+  }
+
+.start {
+    font-size:50px;
+    padding:30px;
+}
